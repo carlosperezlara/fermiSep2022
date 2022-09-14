@@ -1,0 +1,8 @@
+channel 0 is output
+channel 2 is copy from injector
+channel 1 is buffered
+
+chiller at 18C
+
+trigger on ch0 at +60mV
+
