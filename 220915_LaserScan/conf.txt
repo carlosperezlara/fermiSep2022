@@ -1,0 +1,9 @@
+channel 0 is output
+channel 1 is buffered
+Channel 3 is diodeLED
+channel 5 laser trigger
+
+chiller at -26C
+
+trigger on ch5 at +480mV
+
