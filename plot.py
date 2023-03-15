@@ -18,9 +18,12 @@ df_1 = df.loc[ filt_1 ]
 
 ax1 = df_0.plot(kind = 'scatter', x = 'Amplitude', y = 'Sigma', label='nonBUFF', c='y')
 df_1.plot(kind = 'scatter',       x = 'Amplitude', y = 'Sigma', label='BUFFERED',  c = 'r', ax=ax1)
+ax1.set_yscale('log')
+ax1.set_xscale('log')
 
 ax2 = df_0.plot(kind = 'scatter', x = 'Amplitude', y = 'Mean', label='nonBUFF', c='y')
 df_1.plot(kind = 'scatter',       x = 'Amplitude', y = 'Mean', label='BUFFERED',  c = 'r', ax=ax2)
+ax2.set_xscale('log')
 
 ax3 = df_0.plot(kind = 'scatter', x = 'LasTune', y = 'Amplitude', label='nonBUFF', c='y')
 df_1.plot(kind = 'scatter',       x = 'LasTune', y = 'Amplitude', label='BUFFERED',  c = 'r', ax=ax3)
